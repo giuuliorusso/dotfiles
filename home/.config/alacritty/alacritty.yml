@@ -1,0 +1,23 @@
+window:
+  dimensions:
+    columns: 120
+    lines: 30
+
+font:
+  normal:
+    family: Cascadia Code
+    style: Regular
+  size: 18
+
+colors:
+  primary:
+    background: "#000000"
+
+shell:
+  program: /usr/local/bin/fish
+  args:
+    - -l
+    - -c
+    - tmux attach || tmux
+
+alt_send_esc: false

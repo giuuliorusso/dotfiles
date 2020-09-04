@@ -1,0 +1,22 @@
+[apply]
+  whitespace = error
+
+[color]
+  ui = true
+
+[commit]
+  gpgSign = true
+
+[tag]
+  forceSignAnnotated = true
+
+[url "https://github.com/"]
+  insteadOf = "gh:"
+
+[url "https://gitlab.com/"]
+  insteadOf = "gl:"
+
+[user]
+  name = # Name
+  email = # Email
+  signingKey = # Key
