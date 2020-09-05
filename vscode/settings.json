@@ -2,7 +2,6 @@
   "breadcrumbs.filePath": "off",
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.tabSize": 2,
-  "workbench.colorTheme": "Monokai",
   "workbench.iconTheme": "vscode-icons",
   "workbench.startupEditor": "none",
   // Font
@@ -27,7 +26,7 @@
   "workbench.settings.enableNaturalLanguageSearch": false,
   //
   // Other
-  "bracketPairColorizer.showHorizontalScopeLine": false,
-  "bracketPairColorizer.showVerticalScopeLine": false,
-  "clangd.path": "/usr/local/opt/llvm/bin/clangd",
+  "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
+  "bracket-pair-colorizer-2.showVerticalScopeLine": false,
+  "clangd.path": "/usr/local/opt/llvm/bin/clangd"
 }
