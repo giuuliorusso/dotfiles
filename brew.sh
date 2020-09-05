@@ -31,6 +31,7 @@ brew install \
 brew cask install \
   alacritty \
   gitkraken \
+  jetbrains-toolbox \
   visual-studio-code
 
 # Other apps
