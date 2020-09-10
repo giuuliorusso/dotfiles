@@ -4,7 +4,6 @@
 brew analytics off
 brew up
 brew upgrade
-brew cask upgrade
 brew cleanup
 
 # Fonts
