@@ -35,7 +35,7 @@ alias cat 'bat'
 alias copy 'pbcopy'
 alias paste 'pbpaste'
 alias rmdsstore 'find . -name ".DS_Store" -type f -print -delete'
-alias upbrew 'brew up && brew upgrade && brew cask upgrade'
+alias upbrew 'brew up && brew upgrade'
 
 
 # ______
