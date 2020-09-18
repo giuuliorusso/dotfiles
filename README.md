@@ -37,6 +37,11 @@ These are the dotfiles I use on macOS and Linux.
 
 - [Install Flutter](https://flutter.dev/docs/get-started/install)
 
+  ```bash
+  git clone https://github.com/flutter/flutter ~/.flutter
+  flutter config --no-analytics
+  ```
+
 ## License
 
 [MIT](./LICENSE)
