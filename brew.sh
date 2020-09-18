@@ -31,6 +31,7 @@ brew cask install \
   alacritty \
   gitkraken \
   jetbrains-toolbox \
+  postman \
   visual-studio-code
 
 # Other apps
