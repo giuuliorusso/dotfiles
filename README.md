@@ -35,6 +35,8 @@ These are the dotfiles I use on macOS and Linux.
 
 - [Install Haskell](https://www.haskell.org/ghcup/)
 
+- [Install Flutter](https://flutter.dev/docs/get-started/install)
+
 ## License
 
 [MIT](./LICENSE)

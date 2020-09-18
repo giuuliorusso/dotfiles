@@ -13,6 +13,9 @@ if not set -q fish_user_paths
   # Haskell
   set -U fish_user_paths ~/.ghcup/bin $fish_user_paths
   set -U fish_user_paths ~/.cabal/bin $fish_user_paths
+
+  # Flutter
+  set -U fish_user_paths ~/.flutter/bin $fish_user_paths
 end
 
 # GPG
