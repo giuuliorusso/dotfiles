@@ -19,6 +19,7 @@ brew 'gnupg'
 brew 'neovim'
 brew 'starship'
 brew 'tmux'
+brew 'tokei'
 
 # C++
 brew 'llvm'
