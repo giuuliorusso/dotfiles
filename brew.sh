@@ -22,10 +22,13 @@ brew install \
   fish \
   git \
   gnupg \
-  llvm \
   neovim \
   starship \
-  tmux
+  tmux \
+  # C++
+  llvm \
+  # Swift
+  swift-format
 
 brew cask install \
   alacritty \
