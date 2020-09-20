@@ -6,40 +6,8 @@ brew up
 brew upgrade
 brew cleanup
 
-# Fonts
-brew tap homebrew/cask-fonts
-brew cask install \
-  font-cascadia \
-  font-cascadia-pl \
-  font-fira-code \
-  font-iosevka \
-  font-jetbrains-mono
+# Install
+brew bundle install --no-lock
 
-# Dev
-brew install \
-  bat \
-  cmake \
-  fish \
-  git \
-  gnupg \
-  neovim \
-  starship \
-  tmux \
-  # C++
-  llvm \
-  # Swift
-  swift-format \
-  swiftformat
-
-brew cask install \
-  alacritty \
-  gitkraken \
-  jetbrains-toolbox \
-  postman \
-  visual-studio-code
-
-# Other apps
-brew cask install \
-  notion \
-  protonvpn \
-  spotify
+# Cleanup
+brew cleanup

@@ -21,6 +21,7 @@ end
 # GPG
 export GPG_TTY=(tty)
 
+
 # _______
 # Aliases
 alias vi 'nvim'
