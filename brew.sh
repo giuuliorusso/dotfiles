@@ -28,7 +28,8 @@ brew install \
   # C++
   llvm \
   # Swift
-  swift-format
+  swift-format \
+  swiftformat
 
 brew cask install \
   alacritty \
