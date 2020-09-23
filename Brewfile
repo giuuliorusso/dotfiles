@@ -24,6 +24,9 @@ brew 'tokei'
 # C++
 brew 'llvm'
 
+# JavaScript
+brew 'node'
+
 # Swift
 brew 'swift-format'
 brew 'swiftformat'
