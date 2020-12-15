@@ -31,6 +31,6 @@
   "clangd.path": "/usr/local/opt/llvm/bin/clangd",
   "python.showStartPage": false,
   "python.formatting.autopep8Args": [
-    "--ignore E731"
+    "--ignore=E731"
   ]
 }
