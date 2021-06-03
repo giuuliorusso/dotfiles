@@ -1,8 +1,14 @@
 {
   "breadcrumbs.filePath": "off",
+  "editor.minimap.renderCharacters": false,
+  "editor.renderLineHighlight": "all",
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "problems.showCurrentInStatus": true,
+  "update.mode": "manual",
   "workbench.iconTheme": "vscode-icons",
+  "workbench.settings.editor": "json",
   "workbench.startupEditor": "none",
   // Font
   "editor.fontLigatures": true,
@@ -10,6 +16,27 @@
   "editor.fontSize": 16,
   "terminal.integrated.fontFamily": "Cascadia Code",
   "terminal.integrated.fontSize": 16,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+          "comment.block",
+          "comment.block.documentation",
+          "comment.line"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "punctuation.definition.comment",
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
   // OnSave
   "editor.formatOnSave": true,
   "files.insertFinalNewline": true,
@@ -18,19 +45,42 @@
   // Extensions
   "extensions.autoUpdate": false,
   "extensions.ignoreRecommendations": true,
-  "extensions.showRecommendationsOnlyOnDemand": true,
   // Privacy
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
   "workbench.enableExperiments": false,
   "workbench.settings.enableNaturalLanguageSearch": false,
   //
-  // Other
-  "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
-  "bracket-pair-colorizer-2.showVerticalScopeLine": false,
+  // IntelliCode
+  "vsintellicode.modify.editor.suggestSelection": "disabled",
+  "editor.suggestSelection": "first",
+  // C
   "clangd.path": "/usr/local/opt/llvm/bin/clangd",
+  // Python
+  "python.pythonPath": "/usr/local/bin/python3",
   "python.showStartPage": false,
+  "[python]": {
+    "editor.tabSize": 4
+  },
   "python.formatting.autopep8Args": [
     "--ignore=E731"
-  ]
+  ],
+  "jupyter.askForKernelRestart": false,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+  // LaTeX
+  "[latex]": {
+    "editor.formatOnSave": false
+  },
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.message.error.show": false,
+  "latex-workshop.message.warning.show": false,
+  // Other
+  "cSpell.language": "en,it",
+  "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
+  "bracket-pair-colorizer-2.showVerticalScopeLine": false
 }
