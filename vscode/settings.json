@@ -12,9 +12,9 @@
   "workbench.startupEditor": "none",
   // Font
   "editor.fontLigatures": true,
-  "editor.fontFamily": "Cascadia Code",
+  "editor.fontFamily": "JetBrains Mono",
   "editor.fontSize": 16,
-  "terminal.integrated.fontFamily": "Cascadia Code",
+  "terminal.integrated.fontFamily": "JetBrains Mono",
   "terminal.integrated.fontSize": 16,
   "editor.tokenColorCustomizations": {
     "textMateRules": [

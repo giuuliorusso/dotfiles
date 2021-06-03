@@ -5,7 +5,7 @@ window:
 
 font:
   normal:
-    family: Cascadia Code PL
+    family: JetBrains Mono
     style: Regular
   size: 18
 
