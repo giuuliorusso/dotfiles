@@ -2,6 +2,7 @@
   "breadcrumbs.filePath": "off",
   "editor.minimap.renderCharacters": false,
   "editor.renderLineHighlight": "all",
+  "editor.suggest.preview": true,
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
