@@ -17,16 +17,16 @@ These are the dotfiles I use on macOS and Linux.
 
 - [Install Homebrew](https://brew.sh)
 
-- [Install dependencies/packages](./brew.sh)
+- [Install dependencies/packages](./scripts/Brewfile)
 
   ```bash
-  ./brew.sh
+  ./scripts/brew.sh
   ```
 
-- [Copy files](./copy.sh)
+- [Copy files](./scripts/copy.sh)
 
   ```bash
-  ./copy.sh
+  ./scripts/copy.sh
   ```
 
 - [Make fish the default shell](https://fishshell.com/docs/current/faq.html#how-do-i-make-fish-my-default-shell)
