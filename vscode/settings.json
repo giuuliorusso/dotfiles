@@ -52,6 +52,7 @@
   "telemetry.enableTelemetry": false,
   "workbench.enableExperiments": false,
   "workbench.settings.enableNaturalLanguageSearch": false,
+  "redhat.telemetry.enabled": false,
   //
   // IntelliCode
   "vsintellicode.modify.editor.suggestSelection": "disabled",
