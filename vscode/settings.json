@@ -82,6 +82,7 @@
     }
   ],
   // LaTeX
+  "latex-workshop.latex.outDir": "%DIR%/build",
   "[latex]": {
     "editor.formatOnSave": false
   },
