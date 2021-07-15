@@ -14,10 +14,12 @@
   "workbench.startupEditor": "none",
   // Font
   "editor.fontLigatures": true,
-  "editor.fontFamily": "JetBrains Mono",
-  "editor.fontSize": 16,
-  "terminal.integrated.fontFamily": "JetBrains Mono",
-  "terminal.integrated.fontSize": 16,
+  // "editor.fontLigatures": "'zero'", // Cascadia Code
+  "editor.fontLigatures": "'dlig'", // Iosevka
+  "editor.fontFamily": "Iosevka",
+  "editor.fontSize": 18,
+  "terminal.integrated.fontFamily": "Iosevka",
+  "terminal.integrated.fontSize": 18,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
