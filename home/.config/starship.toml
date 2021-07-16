@@ -1,2 +1,5 @@
 [username]
-  show_always = true
+show_always = true
+
+[python]
+python_binary = ["./venv/bin/python", "python3", "python", "python2"]
