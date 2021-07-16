@@ -39,11 +39,8 @@ def yn(question: str) -> bool:
 
 def really(func: Callable[[], None], question: str) -> None:
     if yn(question):
-        try:
-            func()
-            print(colored(f"\tDone {TICK}", GREEN))
-        except:
-            print(colored(f"\tError {CROSS}", RED))
+        func()
+        print(colored(f"\tDone {TICK}", GREEN))
     else:
         print(colored(f"\tAborted {CROSS}", RED))
 
@@ -80,13 +77,24 @@ def delete_files(files: list[Path]) -> None:
             print(colored(f"\tError: {rel(file)} - {e.strerror}", RED))
 
 
-def search(root: Path, pattern: str, ignore_case: bool = False) -> list[Path]:
+def search(
+    root: Path,
+    patterns: Optional[list[str]] = None,
+    ignore_case: bool = False
+) -> list[Path]:
+    if not patterns:
+        return list(root.rglob("*"))
+
     if ignore_case:
         f: Callable[[str], str] \
             = lambda c: f"[{c.lower()}{c.upper()}]" if c.isalpha() else c
-        pattern = "".join(map(f, pattern))
+        patterns = ["".join(map(f, p)) for p in patterns]
 
-    return list(root.rglob(pattern))
+    files: list[Path] = []
+    for p in patterns:
+        files += root.rglob(p)
+
+    return files
 
 
 #
@@ -100,23 +108,35 @@ def print_and_delete(files: list[Path]) -> None:
     )
 
 
-def search_and_delete(root: Optional[Path] = None, pattern: Optional[str] = None, ignore_case: bool = False) -> None:
+def search_and_delete(
+    root: Optional[Path] = None,
+    patterns: Optional[list[str]] = None,
+    ignore_case: bool = False
+) -> None:
     if root is None:
         while True:
             try:
                 answer = input("\tRoot [~]: ").strip() or "~"
-                root = Path(answer) \
+                root = Path(os.path.expandvars(answer)) \
                     .expanduser() \
                     .resolve(strict=True)
                 break
             except (ValueError, FileNotFoundError):
                 print(colored("\tPath not valid. Try again.\n", RED))
 
-    if pattern is None:
-        pattern = input("\tPattern: ")
-        ignore_case = yn("\tIgnore case?")
+    if patterns is None:
+        patterns = []
+        while True:
+            p = input(f"\tPattern #{len(patterns) + 1}: ").strip()
+            if p:
+                patterns.append(p)
+            else:
+                break
 
-    files = search(root, pattern, ignore_case)
+        if patterns:
+            ignore_case = yn("\tIgnore case?")
+
+    files = search(root, patterns, ignore_case)
 
     print()
 
@@ -227,7 +247,17 @@ if __name__ == "__main__":
 
         ("Delete Apple files", lambda: print_and_delete(apple_files)),
         ("Delete App files", lambda: print_and_delete(app_files)),
-        ("Delete '.DS_Store' files\n", lambda: search_and_delete(home, ".DS_Store")),
+        (
+            "Delete 'Cache', 'Caches', 'Logs', 'Saved Application State' files\n",
+            lambda: search_and_delete(
+                library, ["Cache", "Caches", "Logs", "Saved Application State"]
+            )
+        ),
+
+        (
+            "Delete '.DS_Store' files\n",
+            lambda: search_and_delete(home, [".DS_Store"])
+        ),
 
         ("Search", lambda: search_and_delete())
     ]
@@ -241,7 +271,10 @@ if __name__ == "__main__":
         try:
             answer = int(input("\n> "))
             if answer in range(0, len(actions)):
-                actions[answer][1]()
+                try:
+                    actions[answer][1]()
+                except EOFError:
+                    print(colored(f"\n\tAborted {CROSS}", RED))
             else:
                 print(colored("\tOut of range. Try again.", RED))
         except ValueError:
