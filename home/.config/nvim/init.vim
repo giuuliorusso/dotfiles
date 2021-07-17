@@ -8,6 +8,8 @@ endif
 
 call plug#begin('~/.config/nvim/plugged')
 
+Plug 'neovim/nvim-lspconfig'
+
 Plug 'dracula/vim', { 'as': 'dracula' }
 
 Plug 'itchyny/lightline.vim'
@@ -112,3 +114,15 @@ if has('nvim') && !exists('g:fzf_layout')
   autocmd  FileType fzf set laststatus=0 noruler
     \| autocmd BufLeave <buffer> set laststatus=2 ruler
 endif
+
+
+"
+
+lua << EOF
+require'lspconfig'.clangd.setup{}
+require'lspconfig'.hls.setup{}
+require'lspconfig'.pylsp.setup{}
+require'lspconfig'.pyright.setup{}
+require'lspconfig'.rome.setup{}
+require'lspconfig'.rust_analyzer.setup{}
+EOF

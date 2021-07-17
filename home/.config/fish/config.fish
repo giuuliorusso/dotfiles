@@ -7,6 +7,9 @@ set -U EDITOR (which nvim)
 set -U VISUAL $EDITOR
 
 if not set -q fish_user_paths
+  # Python
+  set -U fish_user_paths ~/Library/Python/*.*/bin $fish_user_paths
+
   # Rust
   set -U fish_user_paths ~/.cargo/bin $fish_user_paths
 

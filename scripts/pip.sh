@@ -9,6 +9,7 @@ packages=(
   # Other
   "autopep8"
   "pylint"
+  "python-lsp-server[all]"
   "rope"
 )
 
