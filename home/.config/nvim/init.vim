@@ -16,8 +16,9 @@ Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 
-Plug 'rust-lang/rust.vim'
+Plug 'editorconfig/editorconfig-vim'
 Plug 'neovimhaskell/haskell-vim'
+Plug 'rust-lang/rust.vim'
 
 call plug#end()
 
@@ -117,6 +118,7 @@ endif
 
 
 "
+
 
 lua << EOF
 require'lspconfig'.clangd.setup{}
