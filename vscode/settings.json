@@ -76,6 +76,7 @@
   "python.formatting.autopep8Args": [
     "--ignore=E731"
   ],
+  "jupyter.enableNativeInteractiveWindow": true,
   "jupyter.askForKernelRestart": false,
   "workbench.editorAssociations": [
     {
