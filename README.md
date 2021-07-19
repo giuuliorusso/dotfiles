@@ -44,6 +44,12 @@ These are the dotfiles I use on macOS and Linux.
   flutter config --no-analytics
   ```
 
+- Run [clean.py](./scripts/clean.py)
+
+  ```bash
+  curl -s https://raw.githubusercontent.com/giuuliorusso/dotfiles/master/scripts/clean.py -o clean && python3 clean ; rm -f clean
+  ```
+
 ## License
 
 [MIT](./LICENSE)
