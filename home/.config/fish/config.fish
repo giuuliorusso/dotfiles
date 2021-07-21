@@ -49,6 +49,9 @@ alias up_latex 'sudo tlmgr update --self --all --reinstall-forcibly-removed'
 alias up_npm 'npm update -g'
 alias up_pip 'pip3 list --outdated --format=freeze | grep -v "^\-e" | cut -d = -f 1 | xargs -n1 pip3 install --upgrade'
 
+# Git
+alias gc 'rmdsstore ; git gc --aggressive --prune'
+
 
 # ______
 # Prompt
