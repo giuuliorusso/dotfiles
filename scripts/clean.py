@@ -197,6 +197,10 @@ apple: list[str] = [
 app: list[str] = [
     "Google",
 
+    "Containers/net.pornel.ImageOptimizeExtension",
+
+    "Application Scripts/net.pornel.ImageOptimizeExtension",
+
     "Application Support/Code",
     "Application Support/Firefox",
     "Application Support/GitKraken",

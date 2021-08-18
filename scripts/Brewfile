@@ -49,6 +49,7 @@ cask 'visual-studio-code'
 # Other apps
 cask 'blackhole-2ch'
 cask 'google-chrome'
+cask 'imageoptim'
 cask 'notion'
 cask 'obs'
 cask 'protonvpn'
