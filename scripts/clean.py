@@ -198,6 +198,7 @@ app: list[str] = [
     "Google",
 
     "Containers/net.pornel.ImageOptimizeExtension",
+    "Group Containers/59KZTZA4XR.net.pornel.ImageOptim",
 
     "Application Scripts/net.pornel.ImageOptimizeExtension",
 
@@ -228,6 +229,7 @@ app: list[str] = [
     "Preferences/com.postmanlabs.mac.plist",
     "Preferences/com.spotify.client.plist",
     "Preferences/io.alacritty.plist",
+    "Preferences/net.pornel.ImageOptim.plist",
     "Preferences/notion.id.plist",
     "Preferences/org.mozilla.firefoxdeveloperedition.plist",
     "Preferences/org.safeexambrowser.SafeExamBrowser.plist",
