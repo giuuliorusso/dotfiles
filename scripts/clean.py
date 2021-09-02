@@ -195,44 +195,69 @@ apple: list[str] = [
 ]
 
 app: list[str] = [
-    "Google",
-
-    "Containers/net.pornel.ImageOptimizeExtension",
-    "Group Containers/59KZTZA4XR.net.pornel.ImageOptim",
-
-    "Application Scripts/net.pornel.ImageOptimizeExtension",
-
+    # Adobe
     "Application Support/Adobe",
-    "Application Support/Code",
-    "Application Support/Firefox",
-    "Application Support/GitKraken",
-    "Application Support/Google",
-    "Application Support/JetBrains",
-    "Application Support/Mozilla",
-    "Application Support/Notion",
-    "Application Support/obs-studio",
-    "Application Support/Postman",
-    "Application Support/Spotify",
-    "Application Support/zoom.us",
-
     "Preferences/Adobe",
-    "Preferences/ch.protonvpn.mac.plist",
     "Preferences/com.adobe.AdobeRdrCEFHelper.plist",
     "Preferences/com.adobe.crashreporter.plist",
     "Preferences/com.adobe.Reader.plist",
-    "Preferences/com.axosoft.gitkraken.plist",
-    "Preferences/com.google.Chrome.plist",
-    "Preferences/com.google.Keystone.Agent.plist",
-    "Preferences/com.jetbrains.toolbox.renderer.plist",
-    "Preferences/com.microsoft.VSCode.plist",
-    "Preferences/com.obsproject.obs-studio.plist",
-    "Preferences/com.postmanlabs.mac.plist",
-    "Preferences/com.spotify.client.plist",
+
+    # Alacritty
     "Preferences/io.alacritty.plist",
+
+    # GitKraken
+    "Application Support/GitKraken",
+    "Preferences/com.axosoft.gitkraken.plist",
+
+    # Google
+    "Google",
+    "Application Support/Google",
+    "Preferences/com.google.Chrome.plist",
+    "Preferences/com.google.Keystone.Agent.plist"
+
+    # ImageOptim
+    "Containers/net.pornel.ImageOptimizeExtension",
+    "Group Containers/59KZTZA4XR.net.pornel.ImageOptim",
+    "Application Scripts/net.pornel.ImageOptimizeExtension",
     "Preferences/net.pornel.ImageOptim.plist",
-    "Preferences/notion.id.plist",
+
+    # JetBrains
+    "Application Support/JetBrains",
+    "Preferences/com.jetbrains.toolbox.renderer.plist",
+
+    # Mozilla
+    "Application Support/Mozilla",
+    "Application Support/Firefox",
     "Preferences/org.mozilla.firefoxdeveloperedition.plist",
+
+    # Notion
+    "Application Support/Notion",
+    "Preferences/notion.id.plist",
+
+    # OBS
+    "Application Support/obs-studio",
+    "Preferences/com.obsproject.obs-studio.plist",
+
+    # Postman
+    "Application Support/Postman",
+    "Preferences/com.postmanlabs.mac.plist",
+
+    # ProtonVPN
+    "Preferences/ch.protonvpn.mac.plist",
+
+    # SEB
     "Preferences/org.safeexambrowser.SafeExamBrowser.plist",
+
+    # Spotify
+    "Application Support/Spotify",
+    "Preferences/com.spotify.client.plist",
+
+    # Visual Studio Code
+    "Application Support/Code",
+    "Preferences/com.microsoft.VSCode.plist",
+
+    # Zoom
+    "Application Support/zoom.us",
     "Preferences/us.zoom.xos.plist",
     "Preferences/ZoomChat.plist"
 ]
