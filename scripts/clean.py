@@ -201,6 +201,7 @@ app: list[str] = [
 
     "Application Scripts/net.pornel.ImageOptimizeExtension",
 
+    "Application Support/Adobe",
     "Application Support/Code",
     "Application Support/Firefox",
     "Application Support/GitKraken",
@@ -213,7 +214,11 @@ app: list[str] = [
     "Application Support/Spotify",
     "Application Support/zoom.us",
 
+    "Preferences/Adobe",
     "Preferences/ch.protonvpn.mac.plist",
+    "Preferences/com.adobe.AdobeRdrCEFHelper.plist",
+    "Preferences/com.adobe.crashreporter.plist",
+    "Preferences/com.adobe.Reader.plist",
     "Preferences/com.axosoft.gitkraken.plist",
     "Preferences/com.google.Chrome.plist",
     "Preferences/com.google.Keystone.Agent.plist",

@@ -47,6 +47,7 @@ cask 'visual-studio-code'
 
 # __________
 # Other apps
+cask 'adobe-acrobat-reader'
 cask 'blackhole-2ch'
 cask 'google-chrome'
 cask 'imageoptim'
