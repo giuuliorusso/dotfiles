@@ -1,6 +1,7 @@
 {
   // Main
   "breadcrumbs.filePath": "off",
+  "editor.bracketPairColorization.enabled": true,
   "editor.minimap.renderCharacters": false,
   "editor.renderLineHighlight": "all",
   "editor.suggest.preview": true,
@@ -15,7 +16,7 @@
   // Font
   "editor.fontLigatures": true,
   // "editor.fontLigatures": "'zero'", // Cascadia Code
-  "editor.fontLigatures": "'dlig'", // Iosevka
+  // "editor.fontLigatures": "'dlig'", // Iosevka
   "editor.fontFamily": "Iosevka",
   "editor.fontSize": 18,
   "terminal.integrated.fontFamily": "Iosevka",
@@ -93,7 +94,5 @@
   "latex-workshop.message.error.show": false,
   "latex-workshop.message.warning.show": false,
   // Other
-  "cSpell.language": "en,it",
-  "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
-  "bracket-pair-colorizer-2.showVerticalScopeLine": false
+  "cSpell.language": "en,it"
 }
