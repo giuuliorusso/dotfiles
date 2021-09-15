@@ -210,15 +210,15 @@ app: list[str] = [
     "Preferences/com.axosoft.gitkraken.plist",
 
     # Google
-    "Google",
     "Application Support/Google",
+    "Google",
     "Preferences/com.google.Chrome.plist",
-    "Preferences/com.google.Keystone.Agent.plist"
+    "Preferences/com.google.Keystone.Agent.plist",
 
     # ImageOptim
+    "Application Scripts/net.pornel.ImageOptimizeExtension",
     "Containers/net.pornel.ImageOptimizeExtension",
     "Group Containers/59KZTZA4XR.net.pornel.ImageOptim",
-    "Application Scripts/net.pornel.ImageOptimizeExtension",
     "Preferences/net.pornel.ImageOptim.plist",
 
     # JetBrains
@@ -226,8 +226,8 @@ app: list[str] = [
     "Preferences/com.jetbrains.toolbox.renderer.plist",
 
     # Mozilla
-    "Application Support/Mozilla",
     "Application Support/Firefox",
+    "Application Support/Mozilla",
     "Preferences/org.mozilla.firefoxdeveloperedition.plist",
 
     # Notion
@@ -259,7 +259,10 @@ app: list[str] = [
     # Zoom
     "Application Support/zoom.us",
     "Preferences/us.zoom.xos.plist",
-    "Preferences/ZoomChat.plist"
+    "Preferences/ZoomChat.plist",
+
+    # Other
+    "Preferences/com.qtproject.plist"
 ]
 
 
