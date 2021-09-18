@@ -8,7 +8,17 @@ import readline
 import shutil
 import sys
 
-Action = tuple[str, Callable[[], Union[None, NoReturn]]]
+
+#
+
+
+class Action:
+    def __init__(self, name: str, f: Callable[[], Union[None, NoReturn]]) -> None:
+        self.name = name
+        self._f = f
+
+    def __call__(self) -> None:
+        self._f()
 
 
 #
@@ -282,28 +292,28 @@ if __name__ == "__main__":
 
     # Actions
     actions: list[Action] = [
-        ("Quit\n", sys.exit),
+        Action("Quit\n", sys.exit),
 
-        ("Delete Apple files", lambda: print_and_delete(apple_files)),
-        ("Delete App files", lambda: print_and_delete(app_files)),
-        (
+        Action("Delete Apple files", lambda: print_and_delete(apple_files)),
+        Action("Delete App files", lambda: print_and_delete(app_files)),
+        Action(
             "Delete 'Cache', 'Caches', 'Logs', 'Saved Application State' files\n",
             lambda: search_and_delete(
                 library, ["Cache", "Caches", "Logs", "Saved Application State"]
             )
         ),
 
-        (
+        Action(
             "Delete '.DS_Store' files\n",
             lambda: search_and_delete(home, [".DS_Store"])
         ),
 
-        ("Search", lambda: search_and_delete())
+        Action("Search", lambda: search_and_delete())
     ]
 
     print("Actions:")
-    for i, (name, _) in enumerate(actions):
-        print(f"\t{i} - {name}")
+    for i, action in enumerate(actions):
+        print(f"\t{i} - {action.name}")
 
     # Loop
     while True:
@@ -311,7 +321,7 @@ if __name__ == "__main__":
             answer = int(input("\n> "))
             if answer in range(0, len(actions)):
                 try:
-                    actions[answer][1]()
+                    actions[answer]()
                 except EOFError:
                     print(colored(f"\n\tAborted {CROSS}", RED))
             else:
