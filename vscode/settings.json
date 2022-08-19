@@ -10,6 +10,7 @@
   "editor.wordWrap": "on",
   "problems.showCurrentInStatus": true,
   "update.mode": "manual",
+  "window.commandCenter": true,
   "workbench.iconTheme": "vscode-icons",
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "none",
