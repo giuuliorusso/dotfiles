@@ -51,8 +51,7 @@
   "extensions.autoUpdate": false,
   "extensions.ignoreRecommendations": true,
   // Privacy
-  "telemetry.enableCrashReporter": false,
-  "telemetry.enableTelemetry": false,
+  "telemetry.telemetryLevel": "off",
   "workbench.enableExperiments": false,
   "workbench.settings.enableNaturalLanguageSearch": false,
   "redhat.telemetry.enabled": false,
@@ -63,8 +62,7 @@
   // C
   "clangd.path": "/usr/local/opt/llvm/bin/clangd",
   // Python
-  "python.pythonPath": "/usr/local/bin/python3",
-  "python.showStartPage": false,
+  "python.defaultInterpreterPath": "/usr/local/bin/python3",
   "[python]": {
     "editor.tabSize": 4
   },
@@ -77,14 +75,7 @@
   "python.formatting.autopep8Args": [
     "--ignore=E731"
   ],
-  "jupyter.enableNativeInteractiveWindow": true,
   "jupyter.askForKernelRestart": false,
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
   // LaTeX
   "latex-workshop.latex.outDir": "%DIR%/build",
   "[latex]": {
