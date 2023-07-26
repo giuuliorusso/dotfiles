@@ -29,27 +29,6 @@ These are the dotfiles I use on macOS and Linux.
   ./scripts/copy.sh
   ```
 
-- [Make fish the default shell](https://fishshell.com/docs/current/faq.html#how-do-i-make-fish-my-default-shell)
-
-### Other
-
-- [Install Rust](https://www.rust-lang.org/tools/install)
-
-- [Install Haskell](https://www.haskell.org/ghcup/)
-
-- [Install Flutter](https://flutter.dev/docs/get-started/install)
-
-  ```bash
-  git clone https://github.com/flutter/flutter ~/.flutter
-  flutter config --no-analytics
-  ```
-
-- Run [clean.py](./scripts/clean.py)
-
-  ```bash
-  curl -s https://raw.githubusercontent.com/giuuliorusso/dotfiles/master/scripts/clean.py -o clean && python3 clean ; rm -f clean
-  ```
-
 ## License
 
 [MIT](./LICENSE)
